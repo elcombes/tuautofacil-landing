@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+@theme {
+  /* Registramos los colores de tu marca de forma nativa */
+  --color-brand-dark: #0f1e36;   /* El fondo profundo */
+  --color-brand-navy: #1a3053;   /* El azul original de tu logo */
+  --color-brand-accent: #ff555b; /* El coral/rojo de tu velocímetro */
+}

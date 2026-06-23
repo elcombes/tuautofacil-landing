@@ -1,0 +1,30 @@
+---
+// src/layouts/Layout.astro
+import '../styles/global.css';
+
+interface Props {
+	title?: string;
+}
+
+const { title = "Tu Auto Fácil - Cotizá tu 0km de forma segura" } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+		
+		<!-- Fuente premium moderna de Google Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+	</head>
+	<body class="bg-brand-dark text-white font-['Plus_Jakarta_Sans',_sans-serif] min-h-screen antialiased overflow-x-hidden">
+		<!-- Aquí se insertará el contenido de las páginas -->
+		<slot />
+	</body>
+</html>

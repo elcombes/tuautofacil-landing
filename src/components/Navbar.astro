@@ -1,0 +1,46 @@
+---
+// src/components/Navbar.astro
+---
+<header class="sticky top-0 z-50 w-full bg-brand-dark/80 backdrop-blur-md border-b border-white/5 transition-all duration-300">
+  <!-- 
+    Restauramos 'max-w-7xl mx-auto px-6 lg:px-8' para que el logo se alinee 
+    perfectamente en la misma línea vertical que la "C" de "Cotizá..." abajo.
+  -->
+  <div class="max-w-7xl mx-auto px-6 lg:px-0 py-6 flex items-center justify-between">
+    
+    <!-- Logo alineado con la grilla y con el tamaño ideal reducido -->
+    <a href="/" class="flex items-center transition-transform duration-300 hover:scale-102 my-1">
+      <img 
+        src="/images/logo.png" 
+        alt="Tu Auto Fácil" 
+        width="160"
+        height="62"
+        class="w-[110px] md:w-[160px] h-auto object-contain"
+      />
+    </a>
+
+    <!-- Lado derecho: Acciones rápidas -->
+    <div class="flex items-center gap-6">
+      <!-- Enlace a WhatsApp -->
+      <a 
+        href="https://wa.me/tu_numero_aqui" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        class="hidden sm:inline-flex text-sm text-gray-300 hover:text-white font-semibold transition-colors duration-200"
+      >
+        ¿Dudas? Chatear por WhatsApp
+      </a>
+
+      <!-- Botón de conversión rápida -->
+      <a 
+        href="https://solicitud.tuautofacil.com.ar" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        class="px-5 py-2.5 bg-brand-accent hover:bg-red-400 text-brand-dark font-extrabold text-sm rounded-xl tracking-wide transition-all duration-300 hover:shadow-[0_0_20px_rgba(255,85,91,0.3)] transform hover:-translate-y-0.5"
+      >
+        Simular
+      </a>
+    </div>
+
+  </div>
+</header>
