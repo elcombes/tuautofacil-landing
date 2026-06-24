@@ -1,7 +1,7 @@
 ---
 // src/components/Hero.astro
 ---
-<section class="relative min-h-[60vh] flex items-center justify-center overflow-hidden py-16 px-6 lg:px-8">
+<section class="relative min-h-[60vh] flex items-center justify-center overflow-hidden py-8 md:py-16 px-6 lg:px-8">
   
   <!-- Efecto de Brillo de fondo (Glow) para dar profundidad tridimensional -->
   <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[350px] md:w-[600px] h-[350px] md:h-[600px] bg-emerald-500/10 rounded-full blur-[100px] md:blur-[150px] pointer-events-none"></div>
@@ -53,15 +53,11 @@
     </div>
 
     <!-- Lado Derecho: Imagen del auto principal con sombra de contacto en el suelo -->
-    <div class="relative flex flex-col items-center justify-center order-1 lg:order-2 animate-fade-in-right py-6">
-      <!-- 
-        Nota: He dejado un auto de muestra de Peugeot que se adapta muy bien al fondo oscuro. 
-        Luego podrás cambiar este archivo por la imagen PNG transparente del auto que prefieras.
-      -->
+    <div class="relative flex flex-col items-center justify-center order-1 lg:order-2 animate-fade-in-right py-2 lg:py-6">
       <img 
         src="/images/hero-car.png" 
         alt="Simulador 0km Oficial" 
-        class="relative z-10 w-full max-w-[420px] md:max-w-[500px] object-contain drop-shadow-[0_15px_30px_rgba(0,0,0,0.7)]"
+        class="relative z-10 w-full max-w-[480px] md:max-w-[600px] lg:max-w-[680px] object-contain drop-shadow-[0_15px_30px_rgba(0,0,0,0.7)]"
       />
     </div>
 
