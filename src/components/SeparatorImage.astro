@@ -1,0 +1,31 @@
+---
+// src/components/SeparatorImage.astro
+---
+<section class="w-full relative overflow-hidden border-y border-white/5 bg-brand-dark">
+  
+  <!-- 
+    Versión Desktop:
+    Visible solo en pantallas medianas y grandes (md:block).
+    Usa 'object-cover' y 'object-center' para que actúe como fondo y se adapte al ancho.
+    'loading="lazy"' asegura que no consuma datos hasta que el usuario haga scroll hasta aquí.
+  -->
+  <img 
+    src="/images/separator-desktop.jpg" 
+    alt="Tu Auto Fácil 0km" 
+    class="hidden md:block w-full h-[350px] lg:h-[450px] object-cover object-center filter brightness-90"
+    loading="lazy"
+  />
+
+  <!-- 
+    Versión Mobile:
+    Visible solo en celulares (block md:hidden).
+    Su altura de 250px es perfecta para que se aprecie el detalle en pantallas verticales.
+  -->
+  <img 
+    src="/images/separator-mobile.jpg" 
+    alt="Tu Auto Fácil 0km" 
+    class="block md:hidden w-full h-[250px] object-cover object-center filter brightness-90"
+    loading="lazy"
+  />
+  
+</section>
